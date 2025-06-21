@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cass-log</title>
+  <link rel="stylesheet" href="collect_styles.css">
+</head>
+<body>
+  <header style="background-color: #e0f7fa; padding: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    <h1 style="color: #ff4d4d;">Cass-log</h1>
+    <nav>
+      <a href="scan.html" style="margin: 0 10px; text-decoration: none; color: #333; font-weight: bold;">스캔 페이지</a>
+    </nav>
+  </header>
+  <main>
+    <div class="blog-section">
+      <h2>내가 찍은 사진들</h2>
+      <div id="posts" style="padding: 20px;">
+        <!-- 예시 3개 포스트 -->
+        <div class="post">
+          <div class="photo">Photo 1</div>
+          <div class="date">2025. 6. 20</div>
+        </div>
+        <div class="post">
+          <div class="photo">Photo 2</div>
+          <div class="date">2025. 6. 21</div>
+        </div>
+        <div class="post">
+          <div class="photo">Photo 3</div>
+          <div class="date">2025. 6. 22</div>
+        </div>
+      </div>
+    </div>
+    <div class="progress-section">
+      <p>현재 수집한 사진 수: <span id="photoCount">3</span></p>
+      <h3>상품 안내</h3>
+      <p id="rewardMessage">5개 이상 수집 시 특별 상품 제공!</p>
+    </div>
+  </main>
+  <footer style="background-color: #e0f7fa; padding: 20px; text-align: center; margin-top: 20px; box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);">
+    <button onclick="window.location.href='scan.html'" style="background-color: #ffd700; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">다시 스캔</button>
+  </footer>
+  <script src="collect_script.js"></script>
+</html>

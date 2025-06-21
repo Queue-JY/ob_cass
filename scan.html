@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ca(ss)mera Challenge - 스캔</title>
+  <link rel="stylesheet" href="scan_styles.css">
+</head>
+<body>
+  <header style="background-color: #e0f7fa; padding: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+    <h1 style="color: #ff4d4d;">Cass Fresh x FIFA World Cup United 2026</h1>
+    <p style="color: #ffd700;">Ca(ss)mera Challenge - 함께 승리를 만드세요!</p>
+    <nav>
+      <a href="collect.html" style="margin: 0 10px; text-decoration: none; color: #333; font-weight: bold;">수집 페이지</a>
+    </nav>
+  </header>
+  <main>
+    <div class="logo-examples">
+      <h3 style="color: #ff4d4d;">인증 가능한 로고 예시</h3>
+      <div class="logo-section">
+        <h4>Cass 로고</h4>
+        <div class="logo-box" style="background-color: black; color: white; width: 100px; height: 100px; display: inline-block; margin: 10px; text-align: center; line-height: 100px; border-radius: 10px;">Cass 1</div>
+        <div class="logo-box" style="background-color: black; color: white; width: 100px; height: 100px; display: inline-block; margin: 10px; text-align: center; line-height: 100px; border-radius: 10px;">Cass 2</div>
+        <div class="logo-box" style="background-color: black; color: white; width: 100px; height: 100px; display: inline-block; margin: 10px; text-align: center; line-height: 100px; border-radius: 10px;">Cass 3</div>
+      </div>
+      <div class="logo-section">
+        <h4>World Cup 로고</h4>
+        <div class="logo-box" style="background-color: black; color: white; width: 100px; height: 100px; display: inline-block; margin: 10px; text-align: center; line-height: 100px; border-radius: 10px;">World Cup 1</div>
+        <div class="logo-box" style="background-color: black; color: white; width: 100px; height: 100px; display: inline-block; margin: 10px; text-align: center; line-height: 100px; border-radius: 10px;">World Cup 2</div>
+        <div class="logo-box" style="background-color: black; color: white; width: 100px; height: 100px; display: inline-block; margin: 10px; text-align: center; line-height: 100px; border-radius: 10px;">World Cup 3</div>
+      </div>
+    </div>
+    <div class="upload-section">
+      <div class="upload-box">
+        <h2>Cass 로고 업로드</h2>
+        <input type="file" id="cassUpload" accept="image/*">
+        <button onclick="checkCassLogo()">스캔</button>
+      </div>
+      <div class="upload-box">
+        <h2>World Cup 로고 업로드</h2>
+        <input type="file" id="worldCupUpload" accept="image/*">
+        <button onclick="checkWorldCupLogo()">스캔</button>
+      </div>
+      <div id="result" style="margin-top: 20px; text-align: center; font-size: 1.2em;"></div>
+    </div>
+  </main>
+  <footer style="background-color: #e0f7fa; padding: 20px; text-align: center; margin-top: 20px; box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);">
+    <button onclick="checkBothLogos()" style="background-color: #ffd700; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">둘 다 스캔</button>
+  </footer>
+  <script src="scan_script.js"></script>
+</html>
