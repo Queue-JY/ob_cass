@@ -1,12 +1,14 @@
-body {
-  @font-face {
-    font-family: "RixYeoljeongdo_Regular";
-    src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff")
-      format("woff");
-    font-weight: normal;
-    font-style: normal;
-  }
+@font-face {
+  font-family: "RixYeoljeongdo_Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2102-01@1.0/RixYeoljeongdo_Regular.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
+body {
+  font-family: "RixYeoljeongdo_Regular", sans-serif; /* fallback 폰트 추가 */
+}
+
 .blog-section,
 .progress-section {
   padding: 20px;
