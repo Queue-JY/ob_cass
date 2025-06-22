@@ -7,7 +7,10 @@
 }
 
 body {
-  font-family: "RixYeoljeongdo_Regular", sans-serif; /* fallback 폰트 추가 */
+  font-family: "RixYeoljeongdo_Regular", sans-serif;
+  background-color: #e6f0fa; /* Cass의 상쾌한 파란 톤 유지 */
+  margin: 0;
+  padding: 0;
 }
 
 main {
@@ -34,36 +37,43 @@ main {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: black;
   color: white;
-  width: 60px; /* 크기를 60px로 줄임 */
-  height: 60px; /* 크기를 60px로 줄임 */
+  width: 60px;
+  height: 60px;
   display: inline-block;
   margin: 5px;
   text-align: center;
   border-radius: 10px;
-  overflow: hidden; /* 이미지 오버플로우 방지 */
+  overflow: hidden;
 }
 
 .logo-box img {
   width: 100%;
   height: 100%;
-  object-fit: contain; /* 비율 유지하며 div 안에 맞춤 */
-  border-radius: 10px; /* div와 동일한 둥근 모서리 */
+  object-fit: contain;
+  border-radius: 10px;
 }
 
 .upload-box {
-  margin: 20px 10px;
+  margin: 10px 0;
   padding: 15px;
-  background-color: white;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* 반투명 백그라운드로 배경과 조화 */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 40%;
+  width: 200px;
   display: inline-block;
   vertical-align: top;
   text-align: center;
 }
 
 .upload-box h2 {
-  color: #ff4d4d;
+  color: #5895c6; /* Cass 브랜드 파란색 */
+  font-size: 1.1em; /* 글씨 크기 줄임 */
+  margin: 0;
 }
 
 #result {
@@ -72,4 +82,38 @@ main {
 
 nav a:hover {
   color: #ff4d4d;
+}
+
+header {
+  background-color: #5895c6;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+
+header h1 {
+  color: #cfd8df;
+  margin: 0;
+}
+
+header p {
+  color: #ffd700;
+  margin: 5px 0;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #353b95;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
 }

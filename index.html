@@ -7,11 +7,11 @@
   <link rel="stylesheet" href="index_style.css">
 </head>
 <body>
-  <header style="background-color: #5895c6; padding: 20px; text-align: center; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
-    <h1 style="color: #cfd8df;">Cass Fresh x FIFA World Cup United 2026</h1>
-    <p style="color: #ffd700;">Ca(ss)mera Challenge - 함께 승리를 만드세요!</p>
+  <header>
+    <h1>Cass Fresh x FIFA World Cup United 2026</h1>
+    <p>Ca(ss)mera Challenge - 함께 승리를 만드세요!</p>
     <nav>
-      <a href="collect.html" style="margin: 0 10px; text-decoration: none; color: #333; font-weight: bold;">수집 페이지</a>
+      <a href="collect.html">수집 페이지</a>
     </nav>
   </header>
   <main>
@@ -21,29 +21,27 @@
         <h4>Cass 로고</h4>
         <div class="logo-box"><img src="images/10_CASS_FRESH_Logo_Centred_Silver Stroke.png" alt="Cass 1 Logo"></div>
         <div class="logo-box"><img src="images/11_CASS_FRESH_Logo_Centred_Solid Negative.png" alt="Cass 2 Logo"></div>
+        <div class="upload-box">
+          <h2>Cass 로고 업로드</h2>
+          <input type="file" id="cassUpload" accept="image/*">
+          <button onclick="checkCassLogo()">스캔</button>
+        </div>
       </div>
       <div class="logo-section">
         <h4>World Cup 로고</h4>
         <div class="logo-box"><img src="images/world_cup_1.png" alt="World cup 1 Logo"></div>
         <div class="logo-box"><img src="images/world_cup_2.jpg" alt="World cup 2 Logo"></div>
+        <div class="upload-box">
+          <h2>World Cup 로고 업로드</h2>
+          <input type="file" id="worldCupUpload" accept="image/*">
+          <button onclick="checkWorldCupLogo()">스캔</button>
+        </div>
       </div>
     </div>
-    <div class="upload-section">
-      <div class="upload-box">
-        <h2>Cass 로고 업로드</h2>
-        <input type="file" id="cassUpload" accept="image/*">
-        <button onclick="checkCassLogo()">스캔</button>
-      </div>
-      <div class="upload-box">
-        <h2>World Cup 로고 업로드</h2>
-        <input type="file" id="worldCupUpload" accept="image/*">
-        <button onclick="checkWorldCupLogo()">스캔</button>
-      </div>
-      <div id="result" style="margin-top: 20px; text-align: center; font-size: 1.2em;"></div>
-    </div>
+    <div id="result" style="margin-top: 20px; text-align: center; font-size: 1.2em;"></div>
   </main>
-  <footer style="background-color: #353b95; padding: 20px; text-align: center; margin-top: 20px; box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);">
-    <!--<button onclick="checkBothLogos()" style="background-color: #ffd700; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">둘 다 스캔</button>-->
+  <footer>
+    <!-- <button onclick="checkBothLogos()" style="background-color: #ffd700; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">둘 다 스캔</button> -->
   </footer>
   <script src="index_script.js"></script>
 </html>
